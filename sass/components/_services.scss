@@ -1,0 +1,43 @@
+.services {
+    background-color: var(--primary-bkgcolor);
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
+    display: none;
+    }
+
+    }
+    
+    .services__list {
+    display: flex;
+    gap: 30px;
+    }
+    
+    .services__item {
+    width: 370px;
+    }
+    
+    .services__card {
+    position: relative;
+    }
+    
+    .services__description {
+    position: absolute;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: var(--hero-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    }
+    

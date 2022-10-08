@@ -1,0 +1,93 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/header-img_sm-@1x_result.png);
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/header-img_sm-@2x_result.png);
+  }
+
+//   for tablet
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/header-img_md-@1x_result.png);
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/header-img_sm-@2x_result.png);  
+  }
+}
+
+//   for desktop
+@media screen and (min-width: 769px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/imghero_lg-@1x_result.png);
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/imghero_lg-@2x_result.png);}  
+  }
+
+    background-color: var(--secondary-bkgcolor);
+    max-width: 1600px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px    
+    }
+    
+}
+
+.hero {
+   
+    &__container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    }
+
+    &__btn {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--button-color-hero);
+    color: var(--hero-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;    
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    min-width: 200px;
+    padding: 10px 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    @media screen and (min-width:1200px) {
+    padding: 10px 32px;
+    min-width: 216px;    
+    }
+    }
+
+    &__btn--active:active {
+    background-color: var(--button-color-active);
+    }
+
+}

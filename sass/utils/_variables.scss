@@ -1,0 +1,34 @@
+:root {
+    /* Fonts */
+
+    --main-font: roboto, sans-serif;
+    --logo-font: raleway, sans-serif;
+
+    /* Text colors */
+
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --hero-color: #FFFFFF;
+
+    /* Background colors */
+
+    --primary-bkgcolor: #FFFFFF;
+    --secondary-bkgcolor: #2F303A;
+    --body-bgk: #F5F5F5;
+
+    /* Others */
+
+    --button-color-hero: #2196F3;
+    --button-color: #F5F4FA;
+    --link-active: #2196F3;
+    --light-bgk: #F5F4FA;
+    --button-color-active: #188CE8;
+    --logo-header: #000000;
+    --contacts-footer: rgba(255, 255, 255, 0.6);
+    --social-links: #AFB1B8;
+
+    /* ANIMATION */
+
+    --type: cubic-bezier(0.4, 0, 0.2, 1);
+    --time: 250ms;
+}

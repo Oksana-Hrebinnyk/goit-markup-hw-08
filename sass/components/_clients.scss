@@ -1,0 +1,82 @@
+    
+    .clients {
+    background-color: var(--primary-bkgcolor);
+        
+        &__list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        gap: 30px;           
+        }        
+        
+        }
+
+        &__icon {
+        
+        // display: flex;
+        // flex-wrap: wrap;
+
+        fill: currentColor;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        &__link {
+        color: var(--social-links);
+        display: flex;
+        gap: 30px;
+        justify-content: center;               
+        align-items: center;
+        width: 210px;
+        height: 92px;
+        // flex-basis: calc((100% - 30px) / 2); 
+        
+        border: 1px solid var(--social-links);
+        border-radius: 4px;
+        transition-property: color, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (max-width: 479px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-basis: calc((100% - 30px) / 2);    
+        }
+
+        // @media screen and (min-width: 480px) {
+        // width: 210px;
+        // height: 92px;    
+        // }
+        
+        @media screen and (min-width: 768px) {
+        // flex-basis: calc((100% - 30px) / 3);
+        max-width: 226px;
+        max-height: 92px;
+        }
+
+        @media screen and (min-width: 1200px) {        
+        width: 170px;
+        height: 92px;
+        }
+        
+            
+        transition-property: color, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__link:hover,
+        &__link:focus {
+        border: 1px solid var(--button-color-hero);
+        }
+
+}
