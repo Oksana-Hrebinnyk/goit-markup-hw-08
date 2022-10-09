@@ -42,8 +42,6 @@
     
     &__item {
     max-width: 450px;
-    padding-bottom: 30px;
-    margin: auto 0;
 
     @media  screen and (min-width: 768px) {   
     flex-basis: calc((100% - 30px) / 2);
@@ -51,11 +49,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-    max-height: 248px;
     flex-basis: calc((100% - 30px) / 4);
-    // max-width: 270px;
-    // display: flex;
-    // flex-grow: 1;   
     }
     
     }

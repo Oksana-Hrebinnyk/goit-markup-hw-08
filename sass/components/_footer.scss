@@ -33,10 +33,6 @@ padding-bottom: 60px;
         
     }
 
-    &__address-block {    
-    padding-bottom: 60px;
-    }
-
     &__sl {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--hero-color);
@@ -45,6 +41,8 @@ padding-bottom: 60px;
 
     &__social-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -119,7 +117,7 @@ padding-bottom: 60px;
     }
 
     &__send-block {
-    margin-top: 20px;
+    padding-top: 20px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     width:450px;    
@@ -182,8 +180,11 @@ padding-bottom: 60px;
     
     }
         
-    .social-links-block {    
-    padding-bottom: 60px;
+    .social-links-block {   
+        margin-top: 60px; 
+    @media screen and (min-width: 768px){
+        margin-top: 0px;
+    }
     
     @media screen and (min-width: 1200px) {
     margin-left: 70px;    
@@ -198,9 +199,17 @@ padding-bottom: 60px;
     text-transform: uppercase;    
     color: var(--hero-color);
     margin-bottom: 20px;
+    
+    @media screen and (min-width: 768px){
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+    
     }  
             
 .tablet-footer-block {
+    text-align: center;
+    margin: 60px;
 
 @media screen and (min-width: 1200px) {
 display: flex;    
@@ -211,6 +220,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 165px;    
+margin: 60px;
 }
 }
     

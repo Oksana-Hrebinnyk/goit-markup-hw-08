@@ -26,14 +26,14 @@ background-color: var(--light-bgk);
     }
 
     &__item {
-    max-width: 450px;
+    width: 450px;
     
     @media screen and (max-width: 767px) {    
     margin-bottom: 30px;       
     }
 
     @media screen and (min-width: 768px) {
-    max-width: 354px;
+    max-width: 270px;
     }
 
 
