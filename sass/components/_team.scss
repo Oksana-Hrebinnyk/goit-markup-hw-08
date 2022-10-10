@@ -9,8 +9,6 @@ background-color: var(--light-bgk);
         justify-content: center;    
         }
         
-        
-        
         @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;        
@@ -25,23 +23,24 @@ background-color: var(--light-bgk);
     
     }
 
-    &__item {
-    width: 450px;
-    
-    @media screen and (max-width: 767px) {    
-    margin-bottom: 30px;       
-    }
+    &__item{
 
     @media screen and (min-width: 768px) {
-    max-width: 270px;
+    max-width: 450px;
+    margin-bottom: 30px;
     }
-
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+        }
 
     background-color: var(--hero-color);
-    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     }
+    &__item:not(:last-child){
+        margin-bottom: 30px;
+    }
+
 
     &__name {
     font-weight: 500;

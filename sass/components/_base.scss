@@ -9,7 +9,10 @@ letter-spacing: 0.03em;
 padding: 0 15px 0 15px;
 margin-left: auto;
 margin-right: auto;
-
+@media screen and (min-width: 480px){
+    width: 480px;
+    
+}
 @media screen and (min-width: 768px) {
     width: 768px;    
 }
