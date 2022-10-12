@@ -117,13 +117,12 @@ letter-spacing: 0.02em;
 color: var(--link-active);
 border-right: 1px solid rgba(33, 33, 33, 0.2);
 margin-right: 10px;
+margin-left: 10px;
 
 @media screen and (max-width: 479px) {
 font-size: 12px;
 margin-right: 10px;
+margin-left: 10px;
 
 }
-}
-.menu-socials :not(:last-child){
-    margin-right: 10px;
 }
