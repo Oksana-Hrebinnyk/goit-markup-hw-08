@@ -1704,6 +1704,7 @@ input::placeholder {
 @media screen and (max-width: 479px) {
   .menu-socials {
     font-size: 12px;
+    margin-right: 10px;
   }
 }
 
