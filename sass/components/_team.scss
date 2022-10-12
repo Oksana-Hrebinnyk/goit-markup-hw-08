@@ -32,10 +32,6 @@
     
         &__item {
         max-width: 450px;
-        
-        @media screen and (max-width: 767px) {
-                margin-bottom: 30px;        
-            }
     
         @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-basis: calc((100% - 30px) / 2);
@@ -71,5 +67,9 @@
         .card {
         padding-top: 30px;
         padding-bottom: 30px;
+        }
+
+        .team__item:not(:last-child){
+            margin-bottom: 30px;
         }
     

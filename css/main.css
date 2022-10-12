@@ -485,8 +485,6 @@ img {
 }
 .features__item {
   max-width: 450px;
-  padding-bottom: 30px;
-  margin: auto 0;
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -496,7 +494,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    max-height: 248px;
     -ms-flex-preferred-size: calc((100% - 30px) / 4);
         flex-basis: calc((100% - 30px) / 4);
   }
@@ -520,6 +517,10 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .services {
@@ -666,11 +667,6 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (max-width: 767px) {
-  .team__item {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -696,6 +692,10 @@ img {
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .clients {
@@ -837,10 +837,12 @@ img {
     display: flex;
   }
 }
+.footer__address-block {
+  margin-bottom: 60px;
+}
 @media screen and (max-width: 1199px) {
   .footer__address-block {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 .footer__sl {
@@ -1009,10 +1011,8 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .social-links-block {
-    margin-bottom: 60px;
-  }
+.social-links-block {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .social-links-block {
@@ -1637,9 +1637,6 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: center;
   margin-top: 64px;
 }
@@ -1700,7 +1697,6 @@ input::placeholder {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  padding: 0 10px 0 10px;
   color: var(--link-active);
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -1708,4 +1704,8 @@ input::placeholder {
   .menu-socials {
     font-size: 12px;
   }
+}
+
+.menu-socials:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
