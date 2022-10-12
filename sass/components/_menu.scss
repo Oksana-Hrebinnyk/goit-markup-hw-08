@@ -55,6 +55,7 @@ margin-bottom: auto;
 
 .mobile-socials {
 display: flex;
+justify-content: space-between;
 text-align: center;
 margin-top: 64px;
 }
@@ -114,15 +115,11 @@ font-weight: 500;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
+padding: 0 10px 0 10px;
 color: var(--link-active);
 border-right: 1px solid rgba(33, 33, 33, 0.2);
-margin-right: 10px;
-margin-left: 10px;
 
 @media screen and (max-width: 479px) {
 font-size: 12px;
-margin-right: 10px;
-margin-left: 10px;
-
 }
 }
