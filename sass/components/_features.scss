@@ -39,9 +39,16 @@
         }
 
     }
+    .features__item:not(:last-child){
+        @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+        
+    }
     
     &__item {
     max-width: 450px;
+  
 
 
     @media  screen and (min-width: 768px) {   
@@ -74,6 +81,3 @@
     
     }
 }
-.features__item:not(:last-child){
-        margin-bottom: 30px;
-    }

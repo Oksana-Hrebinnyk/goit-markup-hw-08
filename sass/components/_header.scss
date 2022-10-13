@@ -37,15 +37,21 @@
 
     &__mail {
     @media screen and (max-width: 1199px) {
-    padding-top: 21px;   
+    // padding-top: 20px;   
     }
     }
     &__tel {
     @media screen and (max-width: 1199px) {
-    padding-bottom: 21px;   
+    // padding-bottom: 20px;   
     }
     }
 }
+.margin:not(:last-child){
+    @media  screen and(max-width:1199px) {
+        margin-bottom: 10px;
+    }
+}
+    
     
     .site-nav {
     display: flex;
@@ -84,6 +90,6 @@
 
     .header__group li {
     @media screen and (min-width:1200px){
-    margin-right: 50px   
+    // margin-right: 50px   
     }
     }

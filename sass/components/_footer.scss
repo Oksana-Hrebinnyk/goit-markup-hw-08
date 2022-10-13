@@ -34,13 +34,13 @@
         }
     
         &__address-block { 
-            margin-bottom: 60px;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 60px;
+            }
             
             @media screen and (max-width: 1199px) {
             text-align: center;
             }
-                 
-        
         }
     
         &__sl {
@@ -191,7 +191,7 @@
         }
             
         .social-links-block {
-            margin-bottom: 60px;
+            // margin-bottom: 60px;
         
         @media screen and (min-width: 1200px) {
         margin-left: 70px;    
@@ -213,15 +213,18 @@
         }  
                 
     .tablet-footer-block {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
     
     @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;    
     }
+   
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        
-
+        margin-bottom: 60px;
     display: flex;
     align-items: baseline;
     justify-content: center;
