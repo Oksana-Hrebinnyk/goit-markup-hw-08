@@ -625,6 +625,14 @@ img {
 .team {
   background-color: var(--light-bgk);
 }
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
 @media screen and (max-width: 767px) {
   .team__list {
     display: -webkit-box;
@@ -692,10 +700,6 @@ img {
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .clients {
@@ -1637,9 +1641,6 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: center;
   margin-top: 64px;
 }
@@ -1695,14 +1696,21 @@ input::placeholder {
   color: var(--secondary-color);
 }
 
+.menu-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .menu-socials {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  padding: 0 10px 0 10px;
   color: var(--link-active);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 @media screen and (max-width: 479px) {
   .menu-socials {
